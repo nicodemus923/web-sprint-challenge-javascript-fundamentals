@@ -6,16 +6,15 @@ This challenge allows you to practice the concepts and techniques learned over t
 
 This is an individual assessment. All work must be your own. Your challenge score is a measure of your ability to work independently using the material covered through this sprint. You need to demonstrate proficiency in the concepts and objectives introduced and practiced in preceding days.
 
-You are not allowed to collaborate during the sprint challenge. 
+You are not allowed to collaborate during the sprint challenge.
 
 _You have **three hours** to complete this challenge. Plan your time accordingly._
 
-
 ## Introduction
 
-The index.js file contains all of your challenges. Please review it in full before answering the questions. If you complete the stretch goals please leave them in your file but commented out so that they do not affect the MVP tasks 
+The index.js file contains all of your challenges. Please review it in full before answering the questions. If you complete the stretch goals please leave them in your file but commented out so that they do not affect the MVP tasks
 
-In meeting the minimum viable product (MVP) specifications listed below, you should have all tests passing. You can console.log to check your work and ensure you are submitting the correct results 
+In meeting the minimum viable product (MVP) specifications listed below, you should have all tests passing. You can console.log to check your work and ensure you are submitting the correct results
 
 ### Commits
 
@@ -27,15 +26,40 @@ Be prepared to demonstrate your understanding of this week's concepts by answeri
 
 1. Briefly compare and contrast `.forEach` & `.map` (2-3 sentences max)
 
+forEach() — executes a provided function once for each array element.
+map() — creates a new array with the results of calling a provided function on every element in the calling array.
+
+.forEach() doesn’t actually return anything. It simply calls a provided function on each element in your array. It can also mutate the array it's calling.
+.map() method will also call a provided function on every element in the array. The difference is that map() utilizes return values and actually returns a new Array of the same size.
+
 2. Explain the difference between a callback and a higher order function.
+
+Higher order function receives a callback as a parameter.
+A callback is a function that gets passed IN as a parameter to a higher order function.
 
 3. What is closure?
 
+- closures give us the ability to put functions together
+- it's the ability to access function from a parent level scope in a child level scope even after that function has been terminated
+- code that's been identified elsewhere that we can use later
+- lexical scope === belonging - where do I come from?
+- we can pass varibales down, but we can't pass them back up
+- INHERITANCE IS A ONE-WAY CHAIN --> YOU CAN PASS VALUES DOWN BUT NOT BACK UP SO A CHILD FUNCTION CAN ACCESS CONTENT AT THE PARENT LEVEL BUT THE PARENT LEVEL CAN'T ACCESS THAT OF THE CHILD LEVEL (CAN GO DOWN BUT NOT BACK UP)
+
 4. Describe the four rules of the 'this' keyword.
+
+'this' refers to the parent object
+
+- 1. Window Binding: global scope, no declared object
+- 2. Implicit Binding: declared object
+- 3. 'new' Binding: 'new' operator with constructors/classes
+- 4. Explicit Binding: call(this, arg1, arg2, ...)/apply(this, array) so this refers to the specific object you choose
 
 5. Why do we need super() in an extended class?
 
-You are expected to be able to answer questions in these areas. Your responses contribute to your Sprint Challenge grade. 
+The super keyword refers to the parent class. It is used to call the constructor of the parent class and to access the parent's properties and methods.
+
+You are expected to be able to answer questions in these areas. Your responses contribute to your Sprint Challenge grade.
 
 ## Instructions
 
@@ -46,7 +70,7 @@ Follow these steps to set up your project:
 1. Fork the repo
 2. Clone your forked version of the repo
 3. cd into your repo and create a branch with your first and last name
-NOTE: Tests will run for the JavaScript portion of this challenge only
+   NOTE: Tests will run for the JavaScript portion of this challenge only
 4. open the terminal in your vs code and type `npm install`
 5. next type `npm run test:watch` in your terminal
 6. Complete your work making regular commits, once you have all your tests passing and you are ready to submit your work please see canvas for instructions on how to submit
@@ -57,31 +81,34 @@ Your finished project must include all of the following requirements
 
 #### Task A: Closure
 
-This challenge takes a look at closures as well as scope. 
-* [ ] Find this challenge in the index.js file. Read the instructions carefully!
+This challenge takes a look at closures as well as scope.
+
+- [ ] Find this challenge in the index.js file. Read the instructions carefully!
 
 #### Task B: Objects and Arrays
 
 Test your knowledge of advanced array methods and callbacks.
-* [ ] Find this challenge in the index.js file. Read the instructions carefully!
+
+- [ ] Find this challenge in the index.js file. Read the instructions carefully!
 
 #### Task C: Prototypes
 
 Create constructors, bind methods, and create cuboids in this prototypes challenge.
-* [ ] Find this challenge in the index.js file. Read the instructions carefully!
+
+- [ ] Find this challenge in the index.js file. Read the instructions carefully!
 
 #### Task D: Classes
 
 Once you have completed the prototypes challenge, it's time to convert all your hard work into classes.
-* Find this challenge in the index.js file. Read the instructions carefully!
+
+- Find this challenge in the index.js file. Read the instructions carefully!
 
 In your solutions, it is essential that you follow best practices and produce clean and professional results. Schedule time to review, refine, and assess your work and perform basic professional polishing including spell-checking and grammar-checking on your work. It is better to submit a challenge that meets MVP than one that attempts too much and does not.
 
-### Task 3: Stretch Goals 
+### Task 3: Stretch Goals
 
-There are a few stretch problems found throughout the files, don't work on them until you are finished with MVP requirements! Please remember to comment out your stretch goals before you submit 
+There are a few stretch problems found throughout the files, don't work on them until you are finished with MVP requirements! Please remember to comment out your stretch goals before you submit
 
 ## Submission format
 
-See Canvas for submission instructions 
-
+See Canvas for submission instructions
