@@ -33,7 +33,7 @@
 
 // 5. Why do we need super() in an extended class?
 
-// The super keyword refers to the parent class. It is used to call the constructor of the parent class and to access the parent's properties and methods.
+// The super keyword refers to the parent class. It is used to call the constructor of the parent class and to access the parent's properties and methods.//
 
 
 //🚀🚀🚀  Topic #1 Closures 🚀🚀🚀//
